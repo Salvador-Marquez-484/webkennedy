@@ -1,0 +1,26 @@
+extends ../layout.jade
+block contenido
+  section
+    div(class="text-center")
+      h1(class="lobster mediano" id="tamletra") Editar Eventos
+
+      div(class="col-md-6 col-sm-8 col-xs-11 inline-block quitar-float espacio-izquierda espacio-arriba2 text-left")
+        form(method='post' action='/eventos/'+eventos.id+'?_method=PUT' style='margin-top:1.5em;' enctype='multipart/form-data') 
+          div(class="form-group")
+            label Actividad
+            textarea(name="actividad" placeholder="Grado a cargo, nivel academico" class="form-control")
+              =eventos.actividad  
+          div(class="form-group")
+            label Fecha: 
+            input(name="fecha" value="#{eventos.fecha}" type="text"  id="datepicker")
+              
+          div(class="form-group")
+            label Contraseña
+            input(type="password" name="password" placeholder="Contraseña" class="form-control")
+          div(class="form-group text-right")
+            input(type="submit" class="btn btn-info" value="Actualizar")
+
+  br 
+  br 
+  br 
+  br

@@ -1,0 +1,35 @@
+extends ../layout.jade
+block contenido
+
+  div(id="contenedor")
+  section
+    div(class="text-center")
+      h1(class="lobster celeste mediano" id="tamletra") Complejo Educativo John F. Kennedy
+      p(class="merriweather celeste peque espacio-arriba2" id="correo") Calendario de Actividades para el presente año
+
+    table(class="table table-bordered table-hover espacio-arriba2")
+
+      thead
+        tr(class="active")
+          th(class="success") ACTIVIDADES
+          th(class="success") FECHA 
+
+      tbody
+        each eventos in listaEventos
+          tr
+            td= eventos.actividad
+            td= eventos.fecha
+
+
+    aside(id="sidebar")
+      section(class="widget")
+        h4(class="widgettitle") Formulario de Acceso
+        form(action="/admin/adminPers" method="post")
+          div(class="form-group")
+            label Usuario
+            input(type="text" name="usuario" placeholder="login" class="form-control")
+          div(class="form-group")
+            label Contraseña
+            input(type="password" name="password" placeholder="Contraseña de Administrador" class="form-control")
+          div(class="form-group text-right")
+            input(type="submit" class="btn btn-info" value="Iniciar")

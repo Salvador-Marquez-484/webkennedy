@@ -1,0 +1,166 @@
+/* #Media Queries
+================================================== */
+
+	/* Mayor de 960px (dispositivos y navegadores) */
+	@media only screen and (min-width: 980px) {
+		aside#sidebar {width: 20%;}
+		aside#sidebar .widget {padding: 8% 7%;margin-bottom: 10px;}
+		#content {width: 80%; float: none; margin: 20px 110px; text-align: justify;}
+
+    #tamletra {font-size: 5rem;
+			text-align: center;
+    }
+		iframe{
+			width:90%;
+
+			height: 500px;
+			margin-left: -13px;
+		}
+		.carrusel{
+			width:70%;
+			height: 200%;
+		margin-left: 15%; }
+	}
+
+
+	/* A partir de 960px (dispositivos y navegadores) */
+	@media only screen and (max-width: 958px) {
+		#main-nav ul li{padding:7px 5px;}
+		#contenedor {width: 95%;}
+		#content {width: 80%; float: none; margin: 20px 110px; text-align: justify;}
+		aside#sidebar {width: 30%;}
+		aside#sidebar .widget {padding: 8% 7%; margin-bottom: 10px;}
+
+.extrapeque{font-size: 1em;}
+  #tamletra {font-size: 5rem;
+		text-align: center;
+	}
+	iframe{
+		width:100%;
+		height: 300px;
+		margin-left: -13px;
+	}
+
+
+		}
+
+	/* Tamaño para tablet y móvil, vertical y horizontal (dispositivos y navegadores) */
+	@media screen and  (max-width: 767px) {
+		#contenedor {padding:3px 10px;}
+		#content {width: auto; float: none;margin: 20px 0; text-align:justify;}
+		#menu ul li{padding:7px 10px;}
+
+		aside#sidebar {width: 100%; margin: 0; float: none;}
+		aside#sidebar .widget {padding: 3% 4%; margin: 0 0 10px;}
+		.extrapeque{font-size: 1em;}
+    #tamletra {font-size: 3rem;
+      text-align: center;
+    }
+
+			iframe{
+				width:100%;
+				height: 300px;
+				margin-left: -13px;}
+
+			.espacio-arriba{
+					margin-top: 70px;}
+	 		}
+
+
+	/*Resolucion DVGa Iphone*/
+	@media screen and (max-width: 650px) {
+
+
+		#site-logo {margin: 15px 100px 5px 0; position: static;}
+		#site-description {margin: 0 0 15px; position: static;}
+		#content {width: auto; float: none; margin: 20px 0; text-align:justify;}
+		#sidebar {width: 100%; margin: 0; float: none;}
+		#sidebar .widget {padding: 3% 4%; margin: 0 0 10px;}
+		
+		.peque{font-size: 1em;}
+    #tamletra {font-size: 3rem;
+			text-align: center;
+    }
+		#correo{font-size: 1.5rem;
+			text-align: center;}
+
+		iframe{
+			width:100%;
+			height: 300px;
+			margin-left: -13px;
+		}
+
+	}
+
+	/* Tamaño para tablet y movil, vertical y horizontal (dispositivos y navegadores) */
+	@media only screen and  (max-width: 479px) {
+		#content {width: auto; float: none; margin: 20px 0; text-align:justify;}
+		#contenedor {padding:3px 0;}
+		html {-webkit-text-size-adjust: none;}
+		#main-nav a {font-size: 90%; padding: 10px 8px;}
+		#main-nav ul li{margin: 5px;}
+
+
+		.peque{font-size: 1em;}
+    #tamletra {font-size: 3rem;
+			text-align: center;
+    }
+		a{
+			font-size: 1.5rem;
+		}
+		#correo{font-size: 1.3rem;
+			text-align: center;}
+
+		iframe{
+			width:110%;
+			height: 250px;
+			margin-left: -16px;
+		}
+		#btnPeque{width:110px; height:30px;}
+
+
+		}
+
+	/* Tamaño para tablet y móvil, vertical y horizontal (dispositivos y navegadores) */
+	@media only screen and (max-width: 304px) {
+
+		#main-nav{visibility: hidden; display: none;}
+
+		.peque{font-size: 1em;}
+
+		#tamletra {font-size: 2rem;
+			text-align: center;
+    }
+		a{
+			font-size: 1.5rem;
+		}
+
+		#correo{font-size: 1.3rem;
+			text-align: center;
+			}
+
+		iframe{
+			width:120%;
+			height: 200px;
+			margin-left: -13px;
+		}
+		#btnPeque{width:110px; height:30px;}
+		/*para ajustar redes
+		.lista ul{
+		   padding-right: 0px;
+		   padding-left: 0px;
+		   padding-bottom: 0px;
+		   padding-top: 0px;
+		   margin: 0px;}
+		.lista li{
+		   list-style-type: none;
+		   display: inline;
+		   padding-right: 5px;}
+		.lista{
+			top: 60px;
+			left: 55px;
+			}
+			.contenido{
+		    }*/
+
+		}

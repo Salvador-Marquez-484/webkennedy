@@ -1,0 +1,119 @@
+extends ./layout.jade
+block contenido
+  
+  
+    
+  div(id="")
+  div(class="col-md-2 quitar-float carrusel")
+
+
+    div(id="myCarousel" class="carousel slide" data-ride="carousel")
+
+      <!-- Indicators -->
+      ol(class="carousel-indicators")
+        li(data-target="#myCarousel" data-slide-to="0" class="active")
+        li(data-target="#myCarousel" data-slide-to="1")
+        li(data-target="#myCarousel" data-slide-to="2")
+
+      <!-- Wrapper for slides -->
+      div(class="carousel-inner" role="listbox")
+        div(class="item active")
+          img(src="imagenes/img6.png" class="col-md-12 quitar-float" alt="")
+          div(class="carousel-caption")
+
+
+        div(class="item")
+          img(src="imagenes/img1.png" class="col-md-12 quitar-float" alt="")
+          div(class="carousel-caption")
+
+
+        div(class="item")
+          img(src="imagenes/img2.png" class="col-md-12 quitar-float" alt="")
+          div(class="carousel-caption")
+            p(class="celeste lobster")
+
+        div(class="item")
+          img(src="imagenes/img5.png" class="col-md-12 quitar-float" alt="")
+          div(class="carousel-caption")
+            p(class="celeste lobster")
+
+        div(class="item")
+          img(src="imagenes/img4.png" class="col-md-12 quitar-float" alt="")
+          div(class="carousel-caption")
+            p(class="celeste lobster")
+
+        div(class="item")
+          img(src="imagenes/img3.png" class="col-md-12 quitar-float" alt="")
+          div(class="carousel-caption")
+            p(class="celeste lobster")
+
+        <!-- controles--> 
+      a(class="left carousel-control" href="#myCarousel" role="button" data-slide="prev")
+        span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+        span(class="sr-only") Anterior
+      a(class="right carousel-control" href="#myCarousel" role="button" data-slide="next")
+        span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+        span(class="sr-only") Siguiente
+
+
+
+
+section
+  div(class="text-center")
+    h1(class="lobster celeste mediano" id="tamletra")
+    div(id="content")
+      article(class="post clearfix")
+
+        header(class="card")
+          h1(class="post-title text-center")
+            a(href="#") HISTORIA
+          p(class="post-meta")
+            time(class="post-date" datetime="2011-05-08" pubdate) 1965
+
+          figure(class="post-image text-center")
+            img(height="100px" src="imagenes/monograma.jpg")
+          p(class="merriweather") La Escuela Rural Mixta John F. Kennedy, fue construida por el gobierno de El Salvador con la ayuda del Gobierno de los Estados Unidos de América bajo el plan “Alianza para el Progreso” que impulsó el ya fallecido presidente Kennedy en el año de 1963. Abre sus puertas en el año de 1965 y su infraestructura en ese entonces solo constaba con 2 pabellones que significaba 9 aulas,  la donación del terreno lo hizo el señor Elías Said Kury don Luis Pérez Gómez, Epifanio Rubio y Ramón Enrique Rivas fueron los principales padres de familia que se movilizaron para que la escuela fuera construida. La escuela comenzó impartiendo desde primer grado hasta sexto grado su primer director fue Don Luis Alonzo Bonilla en el año de 1971 se dan los primeros pasos para unificar la escuela fundándose el tercer ciclo en el año de 1973, se graduó la primera promoción del noveno grado en el año de 2002 se funda el primer año de bachillerato técnico opción contador y en el 2004 se gradúa la primera promoción de bachilleres.
+          br
+          br 
+          br 
+    br
+    br 
+    br
+    br  
+        //div(class="col-md-3 col-sm-4 col-xs-12 inline-block")
+          article(class="card imagenes animated fadeInUp retraso1 espacio-arriba")
+            img(src="imagenes/cancha.jpg" class="col-md-12 quitar-float" alt="")
+            h3(class="merriweather")
+              strong Cancha
+
+          article(class="card imagenes animated fadeInUp retraso1 espacio-arriba")
+            img(src="imagenes/direc.jpg" class="col-md-12 quitar-float" alt="")
+            h3(class="lobster")
+              strong Direccion
+
+          article(class="card imagenes animated fadeInUp retraso1 espacio-arriba")
+            img(src="imagenes/maestro3.jpg" class="col-md-12 quitar-float" alt="")
+            h3(class="lobster")
+              strong Maestros
+
+        //div(class="col-md-6 col-sm-4 col-xs-12 inline-block vete-arriba")
+          article(class="card imagenes product animated flash retraso2 espacio-arriba")
+            img(src="imagenes/monograma.jpg" class="col-md-10 quitar-float")
+            h3(class="lobster")
+              strong Monograma
+
+        //div(class="col-md-3 col-sm-4 col-xs-12 inline-block")
+          article(class="card imagenes animated fadeInUp retraso1 espacio-arriba")
+            img(src="imagenes/maestro.jpg" class="col-md-12 quitar-float")
+            h3(class="lobster")
+              strong Dia del maestro
+
+          article(class="card imagenes animated fadeInUp retraso1 espacio-arriba")
+            img(src="imagenes/maestro2.jpg" class="col-md-12 quitar-float")
+            h3(class="lobster")
+              strong Maestros
+
+          article(class="card imagenes animated fadeInUp retraso1 espacio-arriba")
+            img(src="imagenes/recu.jpg" class="col-md-12 quitar-float")
+            h3(class="lobster")
+              strong Recuerdos

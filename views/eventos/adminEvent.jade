@@ -1,0 +1,36 @@
+extends ../layout.jade
+block contenido
+  script(src="/js/fecha.js")
+  section
+    div(class="text-center")
+    h1(class="lobster mediano" id="tamletra") Panel de Administración de Eventos
+    div(class="panel panel-default")
+      <!-- Default panel contents -->
+      div(class="panel-heading") Eventos
+      div(class="table-responsive")
+        table(class="table table-bordered table-hover espacio-arriba2")
+          caption Eventos Actuales
+          a(href="/eventos/nuevoEvent/" style="padding:15px; height:1px;" class="btn  iglyphicon glyphicon-plus" title="Nuevo")  Agregar Nuevo Evento
+          thead
+            tr(class="active")
+              th(class="success") ID
+              th(class="success") ACTIVIDADES
+              th(class="success") FECHA 
+              th(class="success") Acciones
+          tbody
+            each eventos in tablaEventos
+              tr
+                td= eventos.id
+                td= eventos.actividad
+                td= eventos.fecha
+                td
+                  
+                  a(href="/eventos/editEvent/#{eventos.id}" class="btn icon-paste" title="Actualizar") 
+                  a(href="/eventos/elimEvent/#{eventos.id}" class="btn icon-bin" title="Eliminar") 
+                 
+
+
+  
+    br 
+    br 
+    

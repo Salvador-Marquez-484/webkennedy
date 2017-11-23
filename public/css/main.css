@@ -1,0 +1,352 @@
+html,body{
+  height: auto;
+  font-family: 'Lato',Helvetica, Arial, sans-serif;
+  padding: 30px 10px;
+
+
+}
+
+.full-height{
+height: 100%;
+}
+img{
+  max-width:100%;
+}
+.quitar-float{
+  float: none !important;
+}
+.espacio-arriba{
+  margin-top: 130px;
+}
+.espacio-arriba2{
+  margin-top: 33px;
+}
+.lobster{
+  font-family:'Lobster',cursive;
+}
+.merriweather{
+  font-family: 'Merriweather', serif;
+}
+.grande{
+  font-size: 4em;
+}
+.mediana{
+  font-size: 3em;
+}
+.peque{
+  font-size: 2em;
+}
+.celeste{
+  color: #458EFF;
+}
+.negro{
+color: #000;
+}
+.blanco{
+color: #fff;
+}
+a{
+
+  font-size: 1.3em;
+}
+
+.espacio-izquierda{
+  margin-left: 1rem;
+
+}
+h2{
+  margin-top: 10px;
+}
+h2{
+  margin-bottom: 40px;
+}
+/* menu */
+.abajo-navbar{
+    margin-top: 5px;
+}
+.noLista{
+  margin: 0px;
+  padding: 0px;
+}
+.noLista li{
+  list-style-type: none;
+  color: #0F2773;
+}
+.celeste-nav{
+  background-color: #86D1BD;
+}
+.padding-largo{
+  padding: 2px 5px;
+}
+.inline-block{
+  float: none;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.vete-arriba{
+  vertical-align: top;
+}
+.mediano{
+  font-size: 3em;
+}
+/* menu animaciones*/
+.retraso1{
+  -webkit-animation-delay:1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.retraso2{
+  -webkit-animation-delay:2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.card{
+  border-radius: 4px;
+  background-color: #F7F7F7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.imagenes h3{
+  font-size: 1.7em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.nav li:hover > ul {
+  display:block;
+}
+/* institucional*/
+.borde{
+  font-size: 2em;
+  border-radius: 4px;
+  background-color: #B3FFF5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 400px;
+	float: right;
+	margin: 30px 0 30px;
+  }
+  .borde2{
+    font-size: 2em;
+    border-radius: 4px;
+    background-color: #B3FFF5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width:800px;
+  	float: left;
+  	margin: 30px 0 30px;
+  }
+  /* Estilos del pie de página
+================================================== */
+
+footer,pie{
+	background:-moz-linear-gradient(center top , #29B6F6, #29B6F6 15px) repeat scroll 0 0 #29B6F6;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#2BAAFF), to(#2BAAFF));
+	font-family:Arial;
+	font-size:0.8em;
+	color:#FFFFFF;
+	/*padding:10px;*/
+	text-align:center;
+	clear:both;
+	border-radius:0 0 7px 7px;
+	font-weight: bold;
+	}
+  footer{background-color: #FFFFFF; border-top: 10px solid #1D75FF; padding-top: 25px;font-size: 12px;}
+
+/* configurar html5 tags, para convertirlos en  block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+  /* haciendo el mapa responsive
+====================================== */
+/*iframe {
+ max-width: 100%;
+ height: auto;
+}*/
+
+/* Estilos panel derecho
+================================================== */
+aside#sidebar{
+	width: 280px;
+	float: right;
+	margin: 30px 0 30px;
+}
+
+
+  h4{
+  color: #000000;
+
+  }
+.widget {
+	background: #fff;
+	margin: 0 0 30px;
+	padding: 10px 20px;
+	/* rounded corner */
+	border-radius: 8px;
+	border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+.widgettitle {
+	margin: 0 0 5px;
+	padding: 0;
+}
+.widget ul {
+	margin: 0;
+	padding: 0;
+}
+.widget li {
+	margin: 0;
+	padding: 6px 0;
+	list-style: none;
+	clear: both;
+	border-top: solid 1px #000000;
+}
+/* flickr widget */
+.widget .flickr_badge_image {
+	margin-top: 10px;
+}
+.widget .flickr_badge_image img {
+	width: 48px;
+	height: 48px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	float: left;
+}
+
+/*inicia contenido */
+#content
+{
+	background: #fff;
+	margin: 30px 0 30px;
+	padding: 20px 35px;
+	width: 600px;
+	float: left;
+	/* rounded corner */
+	border-radius: 8px;
+	border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	box-shadow: 0 3px 3px rgba(0,0,0,.4);
+	box-shadow: 0 3px 3px rgba(0,0,0,.4);
+	box-shadow: 0 3px 3px rgba(0,0,0,.4);
+}
+
+/* post */
+.post {
+	margin-bottom: 40px;
+	border: 1px solid #123456;
+	border-style: dashed;
+	border-radius: 5px;
+	padding: 5px;
+}
+.post-title {
+	margin: 0 0 5px;
+	padding: 0;
+	font: bold 26px/120% Arial, Helvetica, sans-serif;
+}
+.post-title a {
+	text-decoration: none;
+	color: #000;
+}
+.post-meta {
+	margin: 0 0 10px;
+	font-size: 90%;
+}
+
+/* post image */
+.post-image {
+	margin: 0 0 15px;
+	max-width: 100%;
+	height: auto;
+}
+article p{
+	text-align: justify;
+}
+
+/*Clear fix
+==================================*/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block;}
+
+/*boton ir arriba
+==================================*/
+.ir-arriba {
+	display:none;
+	padding:8px;
+	background:#1D75FF;
+	font-size:25px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:2px;
+  z-index: 5000;
+}
+/*creando iconos para redes sociales
+==================================*/
+/*.social2 {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	/*left: -38px; /* Establecemos la barra en la izquierda */
+	/*top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	/*z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+/*}*/
+
+.social{ /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+z-index: 2000; }
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 10px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada redd social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-google-plus {background: #d95232;}
+	.social ul li .icon-mail {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		/*padding: 10px 20px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+  /*para ajustar redes*/
+  .lista ul{
+     padding-right: 0px;
+     padding-left: 0px;
+     padding-bottom: 0px;
+     padding-top: 0px;
+     margin: 0px;}
+  .lista li{
+     list-style-type: none;
+     display: inline;
+     padding-right: 5px;}
+
+  .ver{
+    cursor: pointer !important;
+  }
+  .abrir{  }
+  .contenido{
+
+  }
+
+  .face{
+    list-style: none;
+    color:#fff;
+		padding: 5px 5px;
+		text-decoration: none;
+		background:#3b5998;
+  }

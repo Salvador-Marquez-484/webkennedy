@@ -1,0 +1,22 @@
+extends ../layout.jade
+block contenido
+
+
+  section
+    div(class="text-center")
+      h1(class="lobster  mediano" id="tamletra") Agregar Eventos
+
+      div(class="col-md-6 col-sm-8 col-xs-11 inline-block quitar-float espacio-izquierda espacio-arriba2 text-left")
+        form(action="/eventos" method="post" style="margin-top:1.5em;" enctype="multipart/form-data")
+          div(class="form-group")
+            label Actividad
+            textarea(name="actividad" placeholder="Actividades" class="form-control")
+            br
+            label Fecha: 
+            input(name="fecha" type="date" id="datepicker")
+
+          div(class="form-group")
+            label Contraseña
+            input(type="password" name="password" placeholder="Contraseña" class="form-control")
+          div(class="form-group text-right")
+            input(type="submit" class="btn btn-info" value="Guardar")

@@ -1,0 +1,17 @@
+extends ../layout.jade
+block contenido
+  section
+    div(class="text-center")
+      h1(class="lobster") ¿Desea eliminar? a:#[a(href="#{personal.imageUrl}" class="ultrapeque btn")=personal.titulo]
+      
+      div(class="col-md-6 col-sm-8 col-xs-11 inline-block quitar-float espacio-izquierda espacio-arriba2 text-left")
+        form(method='post' action='/personal/'+personal.id+'?_method=delete' style='margin-top:1.5em;') 
+          div(class="form-group")
+            label Contraseña
+            input(type="password" name="password" placeholder="Contraseña" class="form-control")
+          div(class="form-group text-right")
+            input(type="submit" class="btn btn-info" value="Eliminar")
+          br 
+          br 
+          br 
+          br

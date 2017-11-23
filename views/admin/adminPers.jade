@@ -1,0 +1,39 @@
+extends ../layout.jade
+block contenido
+
+  section
+    a(class="card peque negro" href="/admin/opciones") Administrar Eventos
+    br
+    br
+    div(class="text-center")
+    h1(class="lobster mediano" id="tamletra") Panel de Administración de Personal
+    div(class="panel panel-default")
+      <!-- Default panel contents -->
+      div(class="panel-heading") Personal
+      div(class="table-responsive")
+        table(class="table table-bordered table-hover espacio-arriba2")
+          caption Personal Actual
+          a(href="/personal/new/"  style="padding:15px; height:1px;" class="btn  icon-user-plus" title="Nuevo")  Agregar Nuevo Personal 
+          thead
+            tr(class="active")
+              th(class="success") Nombre
+              th(class="success") Otros 
+              th(class="success") Imagenes 
+              th(class="success") Acciones
+          tbody
+            each personal in tablaPersonal
+              tr
+                td= personal.titulo
+                td= personal.otros
+                td
+                  a(target="_blank" href="#{personal.imageUrl}" class="btn") Ver imagen 
+                td
+                  
+                  a(href="/personal/editar/#{personal.id}" class="btn icon-paste" title="Actualizar") 
+                  a(href="/personal/eliminar/#{personal.id}" class="btn icon-bin" title="Eliminar") 
+                 
+
+
+    br 
+    br 
+    

@@ -1,0 +1,20 @@
+extends ../layout.jade
+block contenido
+
+  section
+    div(class="text-center")
+      h1(class="lobster  mediano espacio-arriba" id="tamletra") Login Administrador
+      div(class="col-md-6 col-sm-8 col-xs-11 inline-block quitar-float espacio-arriba2 text-left")
+        form(action="/admin/adminPers" method="post")
+          div(class="form-group")
+            label Usuario
+            input(type="text" name="usuario" placeholder="login" class="form-control")
+          div(class="form-group")
+            label Contraseña
+            input(type="password" name="password" placeholder="Contraseña de Administrador" class="form-control")
+          div(class="form-group text-right")
+            input(type="submit" class="btn btn-info" value="Iniciar")
+          br 
+          br 
+          br 
+          br

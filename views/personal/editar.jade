@@ -1,0 +1,28 @@
+extends ../layout.jade
+block contenido
+  section
+    div(class="text-center")
+      h1(class="lobster mediano" id="tamletra") Editar Personal
+
+      div(class="col-md-6 col-sm-8 col-xs-11 inline-block quitar-float espacio-izquierda espacio-arriba2 text-left")
+        form(method='post' action='/personal/'+personal.id+'?_method=PUT' style='margin-top:1.5em;' enctype='multipart/form-data') 
+          div(class="form-group")
+            label Nombre
+            input(type="text" name="titulo" value="#{personal.titulo}" placeholder="Nomb.Maestro" class="form-control")
+          
+          div(class="form-group")
+            label Otros
+            textarea(name="otros" placeholder="Grado a cargo, nivel academico" class="form-control")
+              =personal.otros        
+          div(class="form-group")
+            label Imagen
+            input(type="file" name="imagen" id="btnPeque")
+          div(class="form-group")
+            label Contraseña
+            input(type="password" name="password" placeholder="Contraseña" class="form-control")
+          div(class="form-group text-right")
+            input(type="submit" class="btn btn-info" value="Actualizar")
+          br 
+          br 
+          br 
+          br
